@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M02Entry.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label 
+                Text ="Wpisz tekst"
+                />
+            <Entry
+                Placeholder="wprowadź text"
+                x:Name="entTest"
+                TextChanged="onTextChanged"
+                />
+            <Button
+                Text="pacnij"
+                Clicked="onPacnijClicked"
+                />
+            <Label
+                Text="..."
+                x:Name="lblWynik"
+                />
+            <Label
+                x:Name="lblText"
+                />
+            <Button
+                Text="Idzie Grześ przez wieś"
+                Clicked="onGrzesClicked"
+                />
+            <VerticalStackLayout Spacing="5">
+                <Entry
+                    Placeholder="podaj liczbę"
+                    x:Name="enLiczba1"
+                    />
+                <Label
+                    Text="+"
+                    />
+                <Entry
+                    Placeholder="podaj drugą liczbę"
+                    x:Name="enLiczba2"
+                    />
+            </VerticalStackLayout>
+            <Button
+                Text="Oblicz"
+                Clicked="btnObliczClicked"
+                />
+            <Label
+                x:Name="lblSuma"
+                />
+            <Label
+                Text="Hasło:"
+                />
+            <Entry
+                Placeholder="podaj hasło"
+                x:Name="enHaslo1"
+                IsPassword="True"
+                />
+            <Entry
+                Placeholder="powtórz hasło"
+                IsPassword="True"
+                x:Name="enHaslo2"
+                />
+            <Button
+                Text="sprawdź hasła"
+                Clicked="onSprawdzClicked"
+                />
+            <Label
+                Text="brak hasła"
+                x:Name="lblHaslo"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
